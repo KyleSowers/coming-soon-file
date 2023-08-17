@@ -1,1 +1,79 @@
 @import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --clr--primary: #EE8B8B;
+    --clr--primary-gradiant: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    --clr--secondary: #CE9898;
+    --clr--dark: #423A3A;
+    --clr--light: #FFF;
+    --clr-light-gradient: linear-gradient(135deg, #FFF1F1 0%, #FFFFFF 100%);
+}
+
+body {
+    font-family: "Josefin sans" ;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    flex: 2 0 0;
+    background: var(--clr--light-gradiant);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 75px;
+}
+
+.right-side {
+   /*flex: 1 0 0;*/
+    height: 100vh;
+    background-image: url("../images/main-model.jpg");
+    backgrouns-size: cover;
+    background-position: center;
+    aspect-ratio: 610/800;
+}
+
+.left-side-inner {
+    /*background-color: red;*/
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 133px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.text-container h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: 17px;
+}
+
+.text-container h1 span {
+    color: var(--clr--secondary);
+    font-weight: 300;
+}
+
+.text-container p {
+    color: var(--clr--secondary);
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+}
